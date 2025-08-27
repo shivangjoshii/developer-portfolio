@@ -1,34 +1,45 @@
 import { projectsData } from '@/utils/data/projects-data';
 import ProjectCard from './project-card';
+import Link from 'next/link';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Projects = () => {
-
   return (
-    <div id='projects' className="relative z-50  my-12 lg:my-24">
-      <div className="sticky top-10">
-        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl  opacity-30"></div>
+    <div id='projects' className="relative z-50 my-12 lg:my-24">
+      <div className="sticky top-10 mb-12">
+        <div className="w-[80px] h-[80px] bg-violet-100 rounded-full absolute -top-3 left-0 translate-x-1/2 filter blur-3xl opacity-30"></div>
         <div className="flex items-center justify-start relative">
-          <span className="bg-[#1a1443] absolute left-0  w-fit text-white px-5 py-3 text-xl rounded-md">
+          <span className="bg-[#1a1443] absolute left-0 w-fit text-white px-5 py-3 text-xl rounded-md font-semibold tracking-wide">
             PROJECTS
           </span>
           <span className="w-full h-[2px] bg-[#1a1443]"></span>
         </div>
       </div>
 
-      <div className="pt-24">
-        <div className="flex flex-col gap-6">
-          {projectsData.slice(0, 4).map((project, index) => (
-            <div
-              id={`sticky-card-${index + 1}`}
-              key={index}
-              className="sticky-card w-full mx-auto max-w-2xl sticky"
-            >
-              <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
-                <ProjectCard project={project} />
-              </div>
-            </div>
-          ))}
+      <div className="pt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projectsData.slice(0, 4).map((project, index) => (
+          <div
+            id={`project-card-${index + 1}`}
+            key={index}
+            className="flex flex-col h-full"
+          >
+            <ProjectCard project={project} />
+          </div>
+        ))}
+      </div>
+
+      <div className="flex justify-between items-center mt-12 px-4">
+        <div className="flex items-center space-x-4">
+          <Link href="https://github.com/your-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <FaGithub size={30} className="text-white hover:text-gray-400 transition-colors" />
+          </Link>
+          <Link href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <FaLinkedin size={30} className="text-white hover:text-blue-400 transition-colors" />
+          </Link>
         </div>
+        <Link href="#" className="text-violet-400 font-semibold hover:text-violet-300 transition-colors">
+          View all projects →
+        </Link>
       </div>
     </div>
   );

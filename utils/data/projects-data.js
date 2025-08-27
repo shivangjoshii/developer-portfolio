@@ -1,52 +1,61 @@
 export const projectsData = [
-    {
-        id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
-        code: '',
-        demo: '',
-    },
-    {
-        id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
-    },
-    {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        role: 'Full Stack Developer',
-    }
-];
+{
+    id: 1,
+    name: 'Property Rental App',
+    description: "Developed a full-featured mobile application for property rentals using Flutter. Integrated Google Maps for location search, Razorpay for payments, and Firebase for authentication with OTP. Implemented real-time chat using Firebase Firestore and push notifications via Firebase Cloud Messaging. The app includes advanced room filtering, carousel image sliders, and a beautiful modern UI with smooth hero animations.",
+    tools: ['Flutter', 'Dart', 'Firebase', 'Google Maps API', 'Razorpay API', 'Lottie', 'SharedPreferences'],
+    role: 'Flutter Developer',
+    code: '',
+    demo: '',
+    image: 'https://cdn.dribbble.com/userupload/1234567/file/original-987654321.png', // Replace with your image path
+},
 
+// For an Express backend project
+{
+    id: 2,
+    name: 'AI  Financial App',
+    description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. ",
+    tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
+    role: 'Backend Developer',
+    code: '',
+    demo: '',
+    image: 'https://www.figma.com/community/resource/832d1785-0371-4dc2-bd6a-543cf7208fb4/thumbnail', // Replace with your image path
+},
+
+// For a React project
+{
+    id: 3,
+    name: 'E-Commerce Platform',
+    description: "Built a scalable e-commerce platform using React with Redux Toolkit for state management. Implemented Stripe payment integration, dynamic product filters, and an admin dashboard for inventory management. Added JWT authentication, responsive design with TailwindCSS, and SEO-optimized routing using React Router. Deployed on Vercel with CI/CD pipelines for fast delivery.",
+    tools: ['React', 'Redux Toolkit', 'TailwindCSS', 'Stripe API', 'React Router', 'JWT Auth', 'Vercel', 'Axios'],
+    role: 'Frontend Developer',
+    code: '',
+    demo: '',
+    image: 'https://cdn.dribbble.com/userupload/2345678/file/original-192837465.png', // Replace with your image path
+},
+
+    // {
+    //     id: 4,
+    //     name: 'Newsroom Management',
+    //     description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
+    //     tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
+    //     code: '',
+    //     demo: '',
+    //     role: 'Full Stack Developer',
+    //     image: '/images/newsroom.png', // Add your image path here
+    // }
+];
 
 // Do not remove any property.
 // Leave it blank instead as shown below
 
 // {
-//     id: 1,
-//     name: '',
-//     description: "",
-//     tools: [],
-//     role: '',
-//     code: '',
-//     demo: '',
+//      id: 1,
+//      name: '',
+//      description: "",
+//      tools: [],
+//      role: '',
+//      code: '',
+//      demo: '',
+//      image: '',
 // },
