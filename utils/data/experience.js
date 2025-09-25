@@ -9,7 +9,7 @@ export const experiences = [
     id: 2,
     title: "Project Coordinator",
     company: "RailRestro",
-    duration: "(SEP 2025 - Present)"
+    duration: "(SEP 2024 - Present)"
   },
   {
     id: 3,
