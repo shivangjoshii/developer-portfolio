@@ -1,4 +1,5 @@
 // @flow strict
+"use client";
 
 import * as React from 'react';
 import SingleProject from './single-project'; // Assuming this is now named SingleProject
