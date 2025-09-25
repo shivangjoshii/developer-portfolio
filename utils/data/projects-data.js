@@ -1,37 +1,48 @@
 export const projectsData = [
 {
     id: 1,
-    name: 'Property Rental App',
-    description: "Developed a full-featured mobile application for property rentals using Flutter. Integrated Google Maps for location search, Razorpay for payments, and Firebase for authentication with OTP. Implemented real-time chat using Firebase Firestore and push notifications via Firebase Cloud Messaging. The app includes advanced room filtering, carousel image sliders, and a beautiful modern UI with smooth hero animations.",
+    name: 'coZyo Wesbite',
+    description: "Developed a full-featured web application for property rentals using React+TS+Vite . Integrated Google Maps for location search, Razorpay for payments, and Firebase for authentication with OTP. Implemented real-time chat using Firebase Firestore and push notifications via Firebase Cloud Messaging. The app includes advanced room filtering, carousel image sliders, and a beautiful modern UI with smooth hero animations.",
     tools: ['Flutter', 'Dart', 'Firebase', 'Google Maps API', 'Razorpay API', 'Lottie', 'SharedPreferences'],
     role: 'Flutter Developer',
-    code: '',
-    demo: '',
-    image: 'https://cdn.dribbble.com/userupload/1234567/file/original-987654321.png', // Replace with your image path
+    code: 'https://github.com/shivangjoshii?tab=repositories',
+    demo: 'https://cozyo.in/',
+    image: 'https://i.postimg.cc/YSDWpZPf/coZyo.png', // Replace with your image path
 },
 
 // For an Express backend project
 {
     id: 2,
-    name: 'AI  Financial App',
-    description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. ",
-    tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-    role: 'Backend Developer',
-    code: '',
-    demo: '',
-    image: 'https://www.figma.com/community/resource/832d1785-0371-4dc2-bd6a-543cf7208fb4/thumbnail', // Replace with your image path
+    name: 'Omaxe World Street',
+    description: "Omaxe World Street, Sector 6, New Chandigarh, is a high-end commercial development proudly providing a range of options, from plots, built-up floors, and SCOs, or Shop-Cum-Offices. This specific development is RERA registered under registration number PBRERA-SAS80-PC0195 and is under construction. ",
+    tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppetee','vercel' ,'nextjs', 'typescript', ],
+    role: 'Full Stack Developer',
+    code: 'https://github.com/shivangjoshii?tab=repositories',
+    demo: 'https://omaxeworldstreet.netlify.app/',
+    image: 'https://i.postimg.cc/C1TT3L43/image.png', // Replace with your image path
 },
 
 // For a React project
 {
     id: 3,
-    name: 'E-Commerce Platform',
-    description: "Built a scalable e-commerce platform using React with Redux Toolkit for state management. Implemented Stripe payment integration, dynamic product filters, and an admin dashboard for inventory management. Added JWT authentication, responsive design with TailwindCSS, and SEO-optimized routing using React Router. Deployed on Vercel with CI/CD pipelines for fast delivery.",
-    tools: ['React', 'Redux Toolkit', 'TailwindCSS', 'Stripe API', 'React Router', 'JWT Auth', 'Vercel', 'Axios'],
+    name: 'ShopKart',
+    description: "A feature-rich, high-performance mobile shopping app built with Flutter, designed to provide a seamless and engaging online shopping experience. This app allows users to browse products, compare prices, add items to the cart, and complete secure payments—all from a sleek, intuitive interface.",
+    tools: ['Flutter', 'Dart', 'Firebase', 'Cloud Firestore', 'RESTful APIs', 'Node.js', 'Express.js', 'MongoDB', 'Stripe API', 'PayPal API', 'Provider', 'Bloc', 'Git', 'GitHub', 'FCM', 'Google Maps API'],
     role: 'Frontend Developer',
-    code: '',
+    code: 'https://github.com/shivangjoshii?tab=repositories',
     demo: '',
-    image: 'https://cdn.dribbble.com/userupload/2345678/file/original-192837465.png', // Replace with your image path
+    image: 'https://i.postimg.cc/FKSwVXQD/8f6b83b6e2bbef76b896d6090a41840d.jpg', // Replace with your image path
+},
+
+{
+    id: 4,
+    name: 'coZyo App',
+    description: "Developed a full-featured mobile application for property rentals using Flutter. Integrated Google Maps for location search, Razorpay for payments, and Firebase for authentication with OTP. Implemented real-time chat using Firebase Firestore and push notifications via Firebase Cloud Messaging. The app includes advanced room filtering, carousel image sliders, and a beautiful modern UI with smooth hero animations.",
+    tools: ['Flutter', 'Dart', 'Firebase', 'Google Maps API', 'Razorpay API', 'Lottie', 'SharedPreferences'],
+    role: 'Flutter Developer',
+    code: 'https://github.com/shivangjoshii?tab=repositories',
+    demo: 'https://cozyo.in/',
+    image: 'https://i.postimg.cc/MpVYs6vM/play-store-screen.png', // Replace with your image path
 },
 
     // {

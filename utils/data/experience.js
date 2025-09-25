@@ -12,6 +12,12 @@ export const experiences = [
     duration: "(SEP 2024 - Present)"
   },
   {
+    id: 4,
+    title: "Operation Engineer Trainee",
+    company: "Anand Group",
+    duration: "(MAY 2025-JUNE 2025)"
+  },
+  {
     id: 3,
     title: "Arduino Project Development",
     company: "Building many Arduino and IoT projects ",

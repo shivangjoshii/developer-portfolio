@@ -1,11 +1,26 @@
 "use client";
 
+
+import { useState } from 'react';
 import { projectsData } from '@/utils/data/projects-data';
 import ProjectCard from './project-card';
+import ProjectModal from './project-modal';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div id='projects' className="relative z-50 my-12 lg:my-24">
       <div className="sticky top-10 mb-12">
@@ -23,7 +38,8 @@ const Projects = () => {
           <div
             id={`project-card-${index + 1}`}
             key={index}
-            className="flex flex-col h-full"
+            className="flex flex-col h-full cursor-pointer transform transition-all duration-300 hover:scale-[1.02]"
+            onClick={() => openModal(project)}
           >
             <ProjectCard project={project} />
           </div>
@@ -32,10 +48,10 @@ const Projects = () => {
 
       <div className="flex justify-between items-center mt-12 px-4">
         <div className="flex items-center space-x-4">
-          <Link href="https://github.com/your-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <Link href="https://github.com/shivangjoshii" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
             <FaGithub size={30} className="text-white hover:text-gray-400 transition-colors" />
           </Link>
-          <Link href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <Link href="https://linkedin.com/in/mrpawan01" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
             <FaLinkedin size={30} className="text-white hover:text-blue-400 transition-colors" />
           </Link>
         </div>
@@ -43,6 +59,13 @@ const Projects = () => {
           View all projects →
         </Link>
       </div>
+
+      {/* Project Modal */}
+      <ProjectModal
+        isOpen={isModalOpen}
+        closeModal={closeModal}
+        project={selectedProject}
+      />
     </div>
   );
 };

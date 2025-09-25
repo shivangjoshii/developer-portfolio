@@ -12,7 +12,14 @@ const SingleProject = ({ project }) => {
 
   return (
     <div className='group relative w-full h-[400px] flex flex-col items-center justify-end overflow-hidden cursor-pointer rounded-xl transition-all duration-500 ease-in-out transform hover:scale-[1.02] hover:shadow-[0_0_50px_rgba(102,51,153,0.5)]'>
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${image ? image.src : placeholder.src})` }}>
+      <div className="absolute inset-0">
+        <Image
+          src={image || placeholder.src}
+          alt={name}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-[#201435]/90 to-transparent"></div>
       </div>
 
@@ -26,25 +33,27 @@ const SingleProject = ({ project }) => {
           </p>
         </div>
 
-        <div className="absolute bottom-6 right-6 flex items-center space-x-3 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+        <div className="absolute top-4 left-4 flex flex-col gap-3 opacity-0 transition-all duration-500 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0">
           {demo && (
             <Link
               href={demo}
               target='_blank'
-              className="flex justify-center items-center w-12 h-12 rounded-full border-2 border-white text-white transition-all duration-300 bg-transparent hover:bg-white hover:text-[#201435] hover:scale-110"
+              className="flex items-center gap-2 px-3 py-2 rounded-lg bg-violet-600/90 backdrop-blur-sm text-white text-sm font-medium transition-all duration-300 hover:bg-violet-500 hover:scale-105"
               aria-label="View Demo"
             >
-              <FaPlay size={20} />
+              <FaPlay size={14} />
+              <span>Demo</span>
             </Link>
           )}
           {code && (
             <Link
               href={code}
               target='_blank'
-              className="flex justify-center items-center w-12 h-12 rounded-full border-2 border-white text-white transition-all duration-300 bg-transparent hover:bg-white hover:text-[#201435] hover:scale-110"
+              className="flex items-center gap-2 px-3 py-2 rounded-lg bg-pink-600/90 backdrop-blur-sm text-white text-sm font-medium transition-all duration-300 hover:bg-pink-500 hover:scale-105"
               aria-label="View Code"
             >
-              <FaCode size={20} />
+              <FaCode size={14} />
+              <span>Code</span>
             </Link>
           )}
         </div>

@@ -1,14 +1,16 @@
 "use client";
 // @flow strict
 import { isValidEmail } from "@/utils/check-email";
-import axios from "axios";
+import { submitContactForm } from "@/utils/contact-service";
 import { useState } from "react";
 import { TbMailForward } from "react-icons/tb";
 import { toast } from "react-toastify";
+import SuccessPopup from "../../success-popup";
 
 function ContactForm() {
   const [error, setError] = useState({ email: false, required: false });
   const [isLoading, setIsLoading] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
   const [userInput, setUserInput] = useState({
     name: "",
     email: "",
@@ -35,19 +37,16 @@ function ContactForm() {
 
     try {
       setIsLoading(true);
-      const res = await axios.post(
-        `${process.env.NEXT_PUBLIC_APP_URL}/api/contact`,
-        userInput
-      );
-
-      toast.success("Message sent successfully!");
+      await submitContactForm(userInput);
+      setShowSuccess(true);
       setUserInput({
         name: "",
         email: "",
         message: "",
       });
     } catch (error) {
-      toast.error(error?.response?.data?.message);
+      toast.error("Failed to send message. Please try again.");
+      console.error("Contact form error:", error);
     } finally {
       setIsLoading(false);
     };
@@ -55,6 +54,7 @@ function ContactForm() {
 
   return (
     <div>
+      <SuccessPopup isOpen={showSuccess} onClose={() => setShowSuccess(false)} />
       <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">Contact with me</p>
       <div className="max-w-3xl text-white rounded-lg border border-[#464c6a] p-3 lg:p-5">
         <p className="text-sm text-[#d3d8e8]">{"If you have any questions or concerns, please don't hesitate to contact me. I am open to any work opportunities that align with my skills and interests."}</p>

@@ -7,11 +7,11 @@ export const personalData = {
   phone: '+91927812411',
   address: 'Patna , Bihar 800013',
   github: 'https://github.com/shivangjoshii',
-  facebook: '',
-  linkedIn: '',
+  facebook: 'https://www.instagram.com/joshi.shivangg/',
+  linkedIn: 'https://www.linkedin.com/in/mrpawan01/',
   twitter: '',
   stackOverflow: '',
-  leetcode: "",
+  leetcode: "https://leetcode.com/u/devshivang/",
   devUsername: "shivangjoshii",
-  resume: ""
+  resume: "https://drive.google.com/file/d/1Jslk9GPVOF8ZXdmQk-9NGSVWdpuvYU7n/view"
 }
