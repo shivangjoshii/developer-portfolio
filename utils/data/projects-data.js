@@ -10,9 +10,20 @@ export const projectsData = [
     image: 'https://i.postimg.cc/YSDWpZPf/coZyo.png', // Replace with your image path
 },
 
-// For an Express backend project
 {
     id: 2,
+    name: 'Startuprahi',
+    description: "India's leading platform for startup news, business insights, and entrepreneurial success stories. We bring you the latest trends, innovations, and strategic guidance to help you succeed.",
+    tools: ['React', 'TypeScript', 'Firebase', 'node js ', 'Stock Market API', 'Lottie', 'SharedPreferences'],
+    role: 'Full Stack Developer Developer',
+    code: 'https://github.com/shivangjoshii?tab=repositories',
+    demo: 'https://startuprahi.netlify.app/',
+    image: 'https://i.postimg.cc/mrrKKBpS/pri.png', // Replace with your image path
+},
+
+// For an Express backend project
+{
+    id: 3,
     name: 'Omaxe World Street',
     description: "Omaxe World Street, Sector 6, New Chandigarh, is a high-end commercial development proudly providing a range of options, from plots, built-up floors, and SCOs, or Shop-Cum-Offices. This specific development is RERA registered under registration number PBRERA-SAS80-PC0195 and is under construction. ",
     tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppetee','vercel' ,'nextjs', 'typescript', ],
@@ -24,7 +35,7 @@ export const projectsData = [
 
 // For a React project
 {
-    id: 3,
+    id: 4,
     name: 'ShopKart',
     description: "A feature-rich, high-performance mobile shopping app built with Flutter, designed to provide a seamless and engaging online shopping experience. This app allows users to browse products, compare prices, add items to the cart, and complete secure payments—all from a sleek, intuitive interface.",
     tools: ['Flutter', 'Dart', 'Firebase', 'Cloud Firestore', 'RESTful APIs', 'Node.js', 'Express.js', 'MongoDB', 'Stripe API', 'PayPal API', 'Provider', 'Bloc', 'Git', 'GitHub', 'FCM', 'Google Maps API'],
@@ -35,7 +46,18 @@ export const projectsData = [
 },
 
 {
-    id: 4,
+    id: 5,
+    name: 'Startuprahi Admin Panel',
+    description: "India's leading platform for startup news, business insights, and entrepreneurial success stories. We bring you the latest trends, innovations, and strategic guidance to help you succeed.",
+    tools: ['React', 'TypeScript', 'Firebase', 'node js ', 'Stock Market API', 'Lottie', 'SharedPreferences'],
+    role: 'Full Stack Developer Developer',
+    code: 'https://github.com/shivangjoshii?tab=repositories',
+    demo: 'https://dash-startuprahi.netlify.app/',
+    image: 'https://i.postimg.cc/0ySzD1Cs/Screenshot-2025-10-27-111224.png', // Replace with your image path
+},
+
+{
+    id: 6,
     name: 'coZyo App',
     description: "Developed a full-featured mobile application for property rentals using Flutter. Integrated Google Maps for location search, Razorpay for payments, and Firebase for authentication with OTP. Implemented real-time chat using Firebase Firestore and push notifications via Firebase Cloud Messaging. The app includes advanced room filtering, carousel image sliders, and a beautiful modern UI with smooth hero animations.",
     tools: ['Flutter', 'Dart', 'Firebase', 'Google Maps API', 'Razorpay API', 'Lottie', 'SharedPreferences'],

@@ -34,14 +34,13 @@ const Projects = () => {
       </div>
 
       <div className="pt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projectsData.slice(0, 4).map((project, index) => (
+        {projectsData.map((project) => (
           <div
-            id={`project-card-${index + 1}`}
-            key={index}
+            key={project.id}
             className="flex flex-col h-full cursor-pointer transform transition-all duration-300 hover:scale-[1.02]"
             onClick={() => openModal(project)}
           >
-            <ProjectCard project={project} />
+            <ProjectCard key={`card-${project.id}`} project={project} />
           </div>
         ))}
       </div>

@@ -61,7 +61,7 @@ const SuccessPopup = ({ isOpen, onClose }) => {
                   Message Sent Successfully!
                 </h3>
                 <p className="text-gray-400 mb-6">
-                  Thank you for reaching out. I'll get back to you soon!
+                  Thank you for reaching out. I&apos;ll get back to you soon!
                 </p>
               </motion.div>
 
