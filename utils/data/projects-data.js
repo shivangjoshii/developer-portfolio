@@ -67,6 +67,18 @@ export const projectsData = [
     image: 'https://i.postimg.cc/MpVYs6vM/play-store-screen.png', // Replace with your image path
 },
 
+
+{
+    id:7,
+    name: 'RailTracker',
+    description: "A fast and reliable API service to fetch live Indian train running status and PNR information in real time. Built with Node.js and Express, this API integrates with Indian Railways data sources to provide accurate and up-to-date train information for developers building railway-related applications.",
+    tools: ['react', 'TS', 'Firebase', 'IRCTC API', 'MaterialUI', 'Lottie', 'SharedPreferences'],
+    role: 'Full stack Developer',
+    code: 'https://github.com/shivangjoshii?tab=repositories',
+    demo: 'https://railtracker.netlify.app/',
+    image: 'https://i.postimg.cc/HLpVswDF/Screenshot-2025-11-05-051344.png', // Replace with your image path
+},
+
     // {
     //     id: 4,
     //     name: 'Newsroom Management',
