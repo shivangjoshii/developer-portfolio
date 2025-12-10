@@ -1,29 +1,26 @@
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import { db } from './firebase';
-
-export const submitContactForm = async (formData) => {
+export const submitContactForm = async (data) => {
   try {
-    const docRef = await addDoc(collection(db, 'contacts'), {
-      ...formData,
-      timestamp: serverTimestamp(),
-    });
+    // Check if we're in production (Netlify) or development (localhost)
+    const apiUrl = process.env.NODE_ENV === 'production' 
+      ? '/.netlify/functions/contact'  // Netlify function endpoint
+      : '/api/contact';                 // Next.js API route for local dev
 
-    // Send email notification using API route
-    const emailResponse = await fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
+    const response = await fetch(apiUrl, {
+      method:  'POST',
+      headers:  {
+        'Content-Type':  'application/json',
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(data),
     });
 
-    if (!emailResponse.ok) {
-      throw new Error('Failed to send email notification');
+    if (!response.ok) {
+      const error = await response.json();
+      throw new Error(error.error || 'Failed to send message');
     }
 
-    return { success: true, id: docRef.id };
+    return await response.json();
   } catch (error) {
-    console.error('Error submitting form:', error);
+    console.error('Contact service error:', error);
     throw error;
   }
 };

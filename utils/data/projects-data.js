@@ -17,7 +17,7 @@ export const projectsData = [
     tools: ['React', 'TypeScript', 'Firebase', 'node js ', 'Stock Market API', 'Lottie', 'SharedPreferences'],
     role: 'Full Stack Developer Developer',
     code: 'https://github.com/shivangjoshii?tab=repositories',
-    demo: 'https://startuprahi.netlify.app/',
+    demo: 'https://startuprahi.in/',
     image: 'https://i.postimg.cc/mrrKKBpS/pri.png', // Replace with your image path
 },
 
@@ -52,8 +52,8 @@ export const projectsData = [
     tools: ['React', 'TypeScript', 'Firebase', 'node js ', 'Stock Market API', 'Lottie', 'SharedPreferences'],
     role: 'Full Stack Developer Developer',
     code: 'https://github.com/shivangjoshii?tab=repositories',
-    demo: 'https://dash-startuprahi.netlify.app/',
-    image: 'https://i.postimg.cc/0ySzD1Cs/Screenshot-2025-10-27-111224.png', // Replace with your image path
+    demo: 'https://start.startuprahi.in/',
+    image: 'https://i.postimg.cc/bw1tbsZt/admin-icon-strategy-collection-thin-600nw-2307398667.jpg', // Replace with your image path
 },
 
 {
@@ -76,7 +76,7 @@ export const projectsData = [
     role: 'Full stack Developer',
     code: 'https://github.com/shivangjoshii?tab=repositories',
     demo: 'https://railtracker.netlify.app/',
-    image: 'https://i.postimg.cc/HLpVswDF/Screenshot-2025-11-05-051344.png', // Replace with your image path
+    image: 'https://i.postimg.cc/cCZspLxH/Screenshot-2025-12-10-161239-removebg-preview.png', // Replace with your image path
 },
 
     // {
