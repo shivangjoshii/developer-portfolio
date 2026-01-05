@@ -79,16 +79,42 @@ export const projectsData = [
     image: 'https://i.postimg.cc/cCZspLxH/Screenshot-2025-12-10-161239-removebg-preview.png', // Replace with your image path
 },
 
-    // {
-    //     id: 4,
-    //     name: 'Newsroom Management',
-    //     description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-    //     tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-    //     code: '',
-    //     demo: '',
-    //     role: 'Full Stack Developer',
-    //     image: '/images/newsroom.png', // Add your image path here
-    // }
+{
+    id:8,
+    name: 'RR Experimental Dash',
+    description: "A dashboard which is desigined to migrate from monolithic to microservices architecture. It provides real-time monitoring, analytics, and management of microservices, enabling developers to efficiently oversee and optimize their distributed applications in the different sections like user management, Order Food in Train suing Train no and PNR , Tracking User data , Verify the order , Creating stores and Menus Etc.",
+    tools: ['react', 'TS', 'Redis', 'IRCTC API', 'MaterialUI', 'Lottie', 'Zustand'],
+    role: 'Full stack Developer',
+    code: 'https://github.com/shivangjoshii?tab=repositories',
+    demo: 'https://railtracker.netlify.app/',
+    image: 'https://i.postimg.cc/gjpXLDmb/Screenshot-2026-01-05-162204.png', // Replace with your image path
+},
+
+{
+    id:9,
+    name: 'Quickwork',
+    description: "A quickwork is plafrom specially designed for the corporate employees fro their daily task , for reporting to their senior authority and also can collaborate with them using a single link for realtime update on their work that what actually employee is doing in their working hours. Meanwhile the senior authority can also assign task to their employees and can monitor them easily and also can chat with them using the inbuilt chat feature.",
+    tools: ['react', 'TS', 'Redis', 'SocketIO', 'MaterialUI', 'Lottie', 'Zustand'],
+    role: 'Full stack Developer',
+    code: 'https://github.com/shivangjoshii?tab=repositories',
+    demo: 'https://quickwork-web.netlify.app/',
+    image: 'https://i.postimg.cc/5tMVVk3w/Screenshot-2026-01-05-161654.png', // Replace with your image path
+},
+
+
+{
+    id:10,
+    name: 'Quickwork Admin Panel',
+    description: "A complete Admin panel for the quickwork application where the admin can monitor all the employees and their tasks and also can assign task to them and can chat with them using the inbuilt chat feature.",
+    tools: ['react', 'TS', 'Redis', 'SocketIO', 'MaterialUI', 'Lottie', 'Zustand'],
+    role: 'Full stack Developer',
+    code: 'https://github.com/shivangjoshii?tab=repositories',
+    demo: 'https://quickwork-web.netlify.app/',
+    image: 'https://i.postimg.cc/tJ8czYvs/Screenshot-2026-01-05-161621.png', // Replace with your image path
+},
+
+
+
 ];
 
 // Do not remove any property.
