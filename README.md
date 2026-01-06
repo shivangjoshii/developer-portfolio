@@ -2,7 +2,6 @@
 
 A modern, responsive portfolio website built with Next.js 13, React, and Tailwind CSS. Features a sleek design, smooth animations, and dynamic content sections.
 
-![Portfolio Demo](public/png/placeholder.png)
 
 ## ✨ Features
 
